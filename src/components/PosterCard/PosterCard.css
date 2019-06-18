@@ -1,0 +1,117 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 500px;
+  height: 300px;
+  border-radius: 5px;
+  margin: 20px;
+  float: left;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+  display: inline-block;
+  width: 40%;
+}
+
+.card-image:hover {
+  cursor: pointer;
+}
+
+.card-image:hover .card-overlay {
+  display: block;
+  visibility: visible;
+}
+
+.card-overlay {
+  visibility: hidden;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  height: 50px;
+  position: relative;
+  top: -50px;
+  background: rgba(255, 255, 255, 0.95);
+  letter-spacing: 13px;
+}
+
+.card-overlay .card-overlay-right {
+  float: right;
+}
+
+.card-info {
+  float: right;
+  width: 55%;
+  padding: 10px;
+  height: 93%;
+}
+
+.card-info-title {
+  height: 25%;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-info-overview {
+  display: -webkit-box;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  height: 6.8em;
+  position: relative;
+  font-size: 15px;
+}
+
+.card-info-footer {
+  height: 20%;
+  position: relative;
+  bottom: 20px;
+  top: 50px;
+  border-top: 1px solid lightgray;
+  padding-top: 15px;
+}
+
+.card-info-footer p:hover{
+  cursor: pointer;
+}
+
+/*  tooltip */
+
+.tooltip22 {
+  position: absolute;
+  display: inline-block;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  position: relative;
+  background-color: black;
+  color: white;
+
+  width: 150px;
+  bottom: 180px;
+  margin-left: -20%;
+
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  margin-left: -27%;
+  border-width: 6px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.foo:hover + .tooltiptext {
+  visibility: visible;
+  background-color: gray;
+}

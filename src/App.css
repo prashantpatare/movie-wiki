@@ -1,0 +1,11 @@
+header {
+  background-color:black;
+  color:green;
+}
+
+footer {
+  width: 100%;
+  height: 10rem;
+  background-color:green;
+  visibility: hidden; 
+}

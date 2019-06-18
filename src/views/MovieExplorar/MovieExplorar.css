@@ -1,0 +1,25 @@
+.movie-explorar-nav {
+    font-size:18px;
+    font-weight: bold;
+    background-color: lightblue;
+    position: relative;
+    top:10px;
+}
+
+
+.movie-explorar-nav a {
+    color:black;
+    margin:0 30px;
+    padding:20px 0;
+}
+
+.movie-explorar-nav a:hover{
+    text-decoration: none;
+    color:gray;
+    border-bottom:solid 5px black;
+}
+
+.movie-explorar-nav a:visited{
+    text-decoration: none;
+}
+

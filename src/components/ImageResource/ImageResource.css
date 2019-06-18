@@ -1,0 +1,4 @@
+.img-backdrop-wallpaper{
+    filter:hue-rotate(100deg);
+    filter:opacity(20%);
+}

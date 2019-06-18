@@ -1,0 +1,55 @@
+
+.backdrop-container{
+    height: 600px;
+    border:solid 1px blue;
+    overflow: hidden;
+}
+
+.overview-card {
+    position: absolute;
+    top:200px;
+    width: 1000px;
+    left:400px;
+    color:white;
+    border:solid 1px red;
+  }
+
+  .overview-card-info {
+    float: right;
+    width: 67%;
+    padding: 10px;
+    height: 93%;
+  }
+  
+  .overview-card-info-title {
+    height: 25%;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .overview-card-info-overview {
+    width: 100%;
+    position: relative;
+    font-size: 15px;
+  }
+
+  .crew-container{
+      display: inline-block;
+      height:60px;
+  }
+  .crew-container-left{
+      float: left;
+  }
+  .crew-container-right{
+    float: right;
+}
+
+.crew-top-container{
+    width: 50%;
+}
+
+.overview-card-sub-title{
+    font-size: 20px;
+}
+
+
