@@ -1,7 +1,6 @@
 
 .backdrop-container{
     height: 600px;
-    border:solid 1px blue;
     overflow: hidden;
 }
 
@@ -11,7 +10,6 @@
     width: 1000px;
     left:400px;
     color:white;
-    border:solid 1px red;
   }
 
   .overview-card-info {

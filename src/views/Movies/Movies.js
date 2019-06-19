@@ -21,14 +21,12 @@ class Movies extends React.Component {
 
   render() {
     return (
-      <div className="movies-container">
-        <div style={{ border: "solid 1px lightgray" }}>
+      <div className="app-center-container">
           <h2>Popular Movies</h2>
           <div className="settings-container">
             <Filter />
             <ViewSelector onViewChange={this.handleViewChange} />
           </div>
-        </div>
         <MoviesNavigator settings={this.state} />
       </div>
     );

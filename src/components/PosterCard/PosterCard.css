@@ -50,7 +50,6 @@
 }
 
 .card-info-title {
-  height: 25%;
   font-size: 18px;
   font-weight: bold;
 }
@@ -71,7 +70,7 @@
   height: 20%;
   position: relative;
   bottom: 20px;
-  top: 50px;
+  top: 30px;
   border-top: 1px solid lightgray;
   padding-top: 15px;
 }
@@ -114,4 +113,24 @@
 .foo:hover + .tooltiptext {
   visibility: visible;
   background-color: gray;
+}
+
+
+.card-info-header-container{
+  min-height:40%;
+  width: 100%;
+  margin-left: -20px
+}
+
+.card-info-header-container .user-score-container{
+  width:30%;
+  height: 100%;
+  display: inline-block;
+  margin-top: -10px
+}
+
+.card-info-header-container .movie-title-container{
+  display: inline-block;
+  position: absolute;
+  width:160px;
 }

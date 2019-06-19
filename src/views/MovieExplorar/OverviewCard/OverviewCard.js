@@ -2,6 +2,7 @@ import React from "react";
 import ImageResource from "../../../components/ImageResource/ImageResource";
 import getConstructedUrl from "../../../services/getConstructedURL";
 import { withRouter } from 'react-router';
+import RadialProgressBar from '../../../components/RadialProgressBar/RadialProgressBar'
 
 
 import "./OverviewCard.css";
@@ -55,6 +56,10 @@ class OverviewCard extends React.Component {
           <ImageResource path={movie.poster_path} type="poster-large" />
           <div className="overview-card-info">
             <div className="overview-card-info-title">{movie.title}</div>
+            <RadialProgressBar
+                  value={movie.vote_average * 10}
+                  size="large"
+                />
             <div className="overview-card-info-overview">
               <h2>overview </h2> <p>{movie.overview}</p>
             </div>

@@ -31,14 +31,14 @@ function App(prop) {
       <header>
         <OverviewCard />
       </header>
-      <nav class="movie-explorar-nav">
+      <nav class="movie-explorar-nav app-center-container">
         {createLink('reviews','Reviews')}
         {createLink('videos','Videos')}
         <Link to="/videos/">Images</Link>
         <Link to="/videos/">Changes</Link>
         <hr />
       </nav>
-      <main>
+      <main className='app-center-container'>
         <Route path="/movie/:id" exact component={Cast} />
         <Route path="/reviews" exact component={Reviews} />
         <Route path="/videos" exact component={Videos} />

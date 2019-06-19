@@ -2,28 +2,30 @@ import React from "react";
 import ImageResource from "../../components/ImageResource/ImageResource";
 import "./PosterCard.css";
 import MovieList from "../../views/Movies/MoviesNavigator/MoviesList/MovieList";
+import RadialProgressBar from "../RadialProgressBar/RadialProgressBar";
 
-import history from '../../services/history'
+import history from "../../services/history";
 
 class PosterCard extends React.Component {
+  heartGraphiconOnClick() {
+    alert("a");
+  }
 
-  heartGraphiconOnClick(){
-    alert('a')
-  }
-  
-  handleOnClickLink = ()=>{
-    history.push({pathname:'/movie/'+this.props.movie.id, state: { id: this.props.movie.id }
-  });  
-  }
+  handleOnClickLink = () => {
+    history.push({
+      pathname: "/movie/" + this.props.movie.id,
+      state: { id: this.props.movie.id }
+    });
+  };
 
   render() {
     const movie = this.props.movie;
 
     return (
       <div className="card">
-        <div className="card-image">   
+        <div className="card-image">
           <ImageResource path={movie.poster_path} type="poster" />
-          
+
           <div className="card-overlay">
             <span
               class="glyphicon glyphicon-fire foo"
@@ -33,19 +35,27 @@ class PosterCard extends React.Component {
               class="glyphicon glyphicon-bookmark  card-overlay-right"
               style={{ "font-size": "20px" }}
             />
-            <span onClick={this.heartGraphiconOnClick}
+            <span
+              onClick={this.heartGraphiconOnClick}
               class="glyphicon glyphicon-heart card-overlay-right"
-              style={{ "font-size": "20px", 'color':'red' }}
+              style={{ "font-size": "20px", color: "red" }}
             />
           </div>
 
-          <div class="tooltip2 tooltiptext"><b>Popularity Rank</b><br/>Todays:100 <br/>Last week:200</div>
-
+          <div class="tooltip2 tooltiptext">
+            <b>Popularity Rank</b>
+            <br />
+            Todays:100 <br />
+            Last week:200
+          </div>
         </div>
-        <div className="card-info" style={{style:"text-align:center"}}>
-        
-
-          <div className="card-info-title">{movie.title}</div>
+        <div className="card-info" style={{ style: "text-align:center" }}>
+          <div className='card-info-header-container'>
+            <div className='user-score-container'>
+              <RadialProgressBar value={movie.vote_average*10} size='small'/>
+            </div>
+            <div className="movie-title-container card-info-title">{movie.title}</div>
+          </div>
           <div className="card-info-overview">{movie.overview}</div>
           <div className="card-info-footer">
             <p onClick={this.handleOnClickLink}>More Info</p>

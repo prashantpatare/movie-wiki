@@ -34,7 +34,7 @@ class CastContainer extends React.Component {
     const CastCollection = castArr.map(i => <CastCard castinfo={i} />);
     return (
       <div>
-        <h3>Top Billed Casts</h3>
+        <h3>{'Top Billed Cast'}</h3>
         {CastCollection}
       </div>
     );

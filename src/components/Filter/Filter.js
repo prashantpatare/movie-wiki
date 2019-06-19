@@ -11,8 +11,7 @@ function Filter(props) {
   ];
 
   function onChangeCallback(id){
-     const selected = options.filter(optn => optn.id === id)
-     props.onViewChange(selected[0].internal);
+     return null;
   }
 
   return <CustomDropdown options={options} label="Filter" onChangeCallback={onChangeCallback} />;
