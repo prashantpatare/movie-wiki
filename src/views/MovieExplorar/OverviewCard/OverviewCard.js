@@ -45,9 +45,8 @@ class OverviewCard extends React.Component {
   render() {
     const movie = this.state.movie;
     const crew = this.state.crew;
-
     if (!movie || crew === null) return "data not fetched yet";
-   // console.log("............" + JSON.stringify(crew));
+    const movieYear = movie.release_date.substring(0,4);
 
     return (
       <div className="backdrop-container">
@@ -55,7 +54,8 @@ class OverviewCard extends React.Component {
         <div className="overview-card">
           <ImageResource path={movie.poster_path} type="poster-large" />
           <div className="overview-card-info">
-            <div className="overview-card-info-title">{movie.title}</div>
+            <div className="overview-card-info-title">{movie.title} <span>({movieYear}) </span></div>
+
             <RadialProgressBar
                   value={movie.vote_average * 10}
                   size="large"

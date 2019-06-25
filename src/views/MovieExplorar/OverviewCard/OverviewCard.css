@@ -1,53 +1,56 @@
-
-.backdrop-container{
-    height: 600px;
-    overflow: hidden;
+.backdrop-container {
+  height: 600px;
+  overflow: hidden;
 }
 
 .overview-card {
-    position: absolute;
-    top:200px;
-    width: 1000px;
-    left:400px;
-    color:white;
-  }
-
-  .overview-card-info {
-    float: right;
-    width: 67%;
-    padding: 10px;
-    height: 93%;
-  }
-  
-  .overview-card-info-title {
-    height: 25%;
-    font-size: 30px;
-    font-weight: bold;
-  }
-  
-  .overview-card-info-overview {
-    width: 100%;
-    position: relative;
-    font-size: 15px;
-  }
-
-  .crew-container{
-      display: inline-block;
-      height:60px;
-  }
-  .crew-container-left{
-      float: left;
-  }
-  .crew-container-right{
-    float: right;
+  position: absolute;
+  top: 200px;
+  width: 1000px;
+  margin-left:20%;
+  color: white;
 }
 
-.crew-top-container{
-    width: 50%;
+.overview-card-info {
+  float: right;
+  width: 67%;
+  padding: 10px;
+  height: 93%;
 }
 
-.overview-card-sub-title{
-    font-size: 20px;
+.overview-card-info-title {
+  height: 25%;
+  font-size: 30px;
+  font-weight: bold;
+}
+.overview-card-info-title span {
+  font-size: 24px;
+  font-weight: bold;
+  color: gray;
+  display: inline;
 }
 
+.overview-card-info-overview {
+  width: 100%;
+  position: relative;
+  font-size: 15px;
+}
 
+.crew-container {
+  display: inline-block;
+  height: 60px;
+}
+.crew-container-left {
+  float: left;
+}
+.crew-container-right {
+  float: right;
+}
+
+.crew-top-container {
+  width: 50%;
+}
+
+.overview-card-sub-title {
+  font-size: 20px;
+}

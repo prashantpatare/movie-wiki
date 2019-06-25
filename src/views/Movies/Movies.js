@@ -21,7 +21,7 @@ class Movies extends React.Component {
 
   render() {
     return (
-      <div className="app-center-container">
+      <div className="app-center-container-wide">
           <h2>Popular Movies</h2>
           <div className="settings-container">
             <Filter />

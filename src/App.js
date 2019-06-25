@@ -21,7 +21,7 @@ function App() {
       </main>
       <div style={{ clear: "both" }} />
       <footer>
-        <img src={require("./themoviedb.svg")} width="100px" alt='' />
+        <img src={require("./logos/themoviedb.svg")} width="100px" alt='' />
         {"Powered by TheMovieDb.org"}
       </footer>
     </Router>
