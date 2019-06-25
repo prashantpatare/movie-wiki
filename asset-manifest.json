@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/prashantpatare/movie-wiki/static/css/main.365e272b.chunk.css",
+    "main.js": "/prashantpatare/movie-wiki/static/js/main.ae994bff.chunk.js",
+    "main.js.map": "/prashantpatare/movie-wiki/static/js/main.ae994bff.chunk.js.map",
+    "runtime~main.js": "/prashantpatare/movie-wiki/static/js/runtime~main.67f2fc70.js",
+    "runtime~main.js.map": "/prashantpatare/movie-wiki/static/js/runtime~main.67f2fc70.js.map",
+    "static/js/2.a6dd473d.chunk.js": "/prashantpatare/movie-wiki/static/js/2.a6dd473d.chunk.js",
+    "static/js/2.a6dd473d.chunk.js.map": "/prashantpatare/movie-wiki/static/js/2.a6dd473d.chunk.js.map",
+    "index.html": "/prashantpatare/movie-wiki/index.html",
+    "precache-manifest.d7deb7301b04f4f549959bd764c31613.js": "/prashantpatare/movie-wiki/precache-manifest.d7deb7301b04f4f549959bd764c31613.js",
+    "service-worker.js": "/prashantpatare/movie-wiki/service-worker.js",
+    "static/css/main.365e272b.chunk.css.map": "/prashantpatare/movie-wiki/static/css/main.365e272b.chunk.css.map",
+    "static/media/themoviedb.svg": "/prashantpatare/movie-wiki/static/media/themoviedb.02a9430b.svg",
+    "static/media/userAvtar.png": "/prashantpatare/movie-wiki/static/media/userAvtar.40624a16.png"
+  }
+}
